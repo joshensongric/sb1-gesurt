@@ -1,0 +1,147 @@
+:root {
+  /* Dark Mode Theme */
+  --primary-dark: #16c181;
+  --secondary-dark: #4d6d83;
+  --tertiary-dark: #ffa85c;
+  --alternate-dark: #222a2f;
+  --primary-text-dark: #ffffff;
+  --secondary-text-dark: #a9adc6;
+  --primary-background-dark: #192024;
+  --secondary-background-dark: #14191c;
+  --accent-1-dark: #4d90cad8;
+  --accent-2-dark: #4d4d6d83;
+  --accent-3-dark: #4dffa860;
+  --accent-4-dark: #b224282e;
+  --success-dark: #03ce9f;
+  --error-dark: #ff4d6a;
+  --warning-dark: #f9a33f;
+  --info-dark: #ffffff;
+
+  /* Light Mode Theme (Extracted from Flexperts Academy) */
+  --primary-light: #16c181;
+  --secondary-light: #4d6d83;
+  --tertiary-light: #ffa85c;
+  --alternate-light: #f5f5f5;
+  --primary-text-light: #333333;
+  --secondary-text-light: #666666;
+  --primary-background-light: #ffffff;
+  --secondary-background-light: #f9f9f9;
+  --accent-1-light: #e6f7ff;
+  --accent-2-light: #f0f5ff;
+  --accent-3-light: #fff7e6;
+  --accent-4-light: #fff1f0;
+  --success-light: #52c41a;
+  --error-light: #ff4d4f;
+  --warning-light: #faad14;
+  --info-light: #1890ff;
+
+  /* Default to Dark Mode */
+  --primary: var(--primary-dark);
+  --secondary: var(--secondary-dark);
+  --tertiary: var(--tertiary-dark);
+  --alternate: var(--alternate-dark);
+  --primary-text: var(--primary-text-dark);
+  --secondary-text: var(--secondary-text-dark);
+  --primary-background: var(--primary-background-dark);
+  --secondary-background: var(--secondary-background-dark);
+  --accent-1: var(--accent-1-dark);
+  --accent-2: var(--accent-2-dark);
+  --accent-3: var(--accent-3-dark);
+  --accent-4: var(--accent-4-dark);
+  --success: var(--success-dark);
+  --error: var(--error-dark);
+  --warning: var(--warning-dark);
+  --info: var(--info-dark);
+
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--primary-text);
+  background-color: var(--primary-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--tertiary);
+}
+
+code {
+  background-color: var(--alternate);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--alternate);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.tip {
+  background-color: var(--alternate);
+  border-left: 4px solid var(--primary);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.tip::before {
+  content: "TIP";
+  font-weight: bold;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary: var(--primary-light);
+    --secondary: var(--secondary-light);
+    --tertiary: var(--tertiary-light);
+    --alternate: var(--alternate-light);
+    --primary-text: var(--primary-text-light);
+    --secondary-text: var(--secondary-text-light);
+    --primary-background: var(--primary-background-light);
+    --secondary-background: var(--secondary-background-light);
+    --accent-1: var(--accent-1-light);
+    --accent-2: var(--accent-2-light);
+    --accent-3: var(--accent-3-light);
+    --accent-4: var(--accent-4-light);
+    --success: var(--success-light);
+    --error: var(--error-light);
+    --warning: var(--warning-light);
+    --info: var(--info-light);
+  }
+}
